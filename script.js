@@ -26,10 +26,10 @@ console.log(pizzaToppings[1]);
 
 // Given the following object, use destructuring to create variables `make` and `model` that will hold the respective values.
 
-const car = {
-  make: "Audi",
-  model: "q5",
-};
+// const car = {
+//   make: "Audi",
+//   model: "q5",
+// };
 
 // Your code here
 
@@ -48,10 +48,10 @@ console.log(controversialPizzaToppings);
 
 // Duplicate the following object and spread its values into a new variable `myCar`.
 
-// const car = {
-//     make: 'Audi',
-//     model: 'q5',
-//   };
+const car = {
+    make: 'Audi',
+    model: 'q5',
+  };
 
 // Change the `model` property of `myCar` to 'q7'. Log both objects.
 
@@ -92,3 +92,17 @@ function describeAnimal(noun = "cat", adjective = "white") {
 describeAnimal();
 describeAnimal("snake", "disgusting");
 describeAnimal('pig', 'surprisingly clean');
+
+// Convert the following `if...else` statement in to a ternary:
+
+let pizza = 'tasty';
+
+if (pizza === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+
+// Your code here
+
+pizza === 'tasty' ? console.log('yum') : console.log('yuck');
