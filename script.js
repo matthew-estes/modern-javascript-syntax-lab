@@ -62,16 +62,33 @@ myCar.model = "q7";
 
 console.log(myCar);
 
-
-// Create an object named userProfile. 
-// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Create an object named userProfile.
+// Define a variable named propertyName and assign a string to it (like a username, age, or email).
 // Use propertyName as a dynamic key in userProfile, assigning a relevant value.
 
 // Your code here
 
 const userProfile = {};
-const propertyName = 'username';
+const propertyName = "username";
 
-userProfile[propertyName] = 'shaquille.oatmeal' 
+userProfile[propertyName] = "shaquille.oatmeal";
 
 console.log(userProfile);
+
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+
+function describeAnimal(noun = "cat", adjective = "white") {
+  console.log(`The ${noun} is ${adjective}.`);
+}
+
+describeAnimal();
+describeAnimal("snake", "disgusting");
+describeAnimal('pig', 'surprisingly clean');
